@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.e538c05a.css",
-    "main.js": "/static/js/main.f55194fe.js",
-    "static/js/787.b3f9d252.chunk.js": "/static/js/787.b3f9d252.chunk.js",
-    "index.html": "/index.html",
-    "main.e538c05a.css.map": "/static/css/main.e538c05a.css.map",
-    "main.f55194fe.js.map": "/static/js/main.f55194fe.js.map",
-    "787.b3f9d252.chunk.js.map": "/static/js/787.b3f9d252.chunk.js.map"
+    "main.css": "/Korean-Wordle/static/css/main.e538c05a.css",
+    "main.js": "/Korean-Wordle/static/js/main.fba49e7e.js",
+    "static/js/787.b3f9d252.chunk.js": "/Korean-Wordle/static/js/787.b3f9d252.chunk.js",
+    "index.html": "/Korean-Wordle/index.html",
+    "main.e538c05a.css.map": "/Korean-Wordle/static/css/main.e538c05a.css.map",
+    "main.fba49e7e.js.map": "/Korean-Wordle/static/js/main.fba49e7e.js.map",
+    "787.b3f9d252.chunk.js.map": "/Korean-Wordle/static/js/787.b3f9d252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e538c05a.css",
-    "static/js/main.f55194fe.js"
+    "static/js/main.fba49e7e.js"
   ]
 }
