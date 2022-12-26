@@ -47,10 +47,16 @@
 .cell-reveal.present {
   animation-name: revealPresentCharCell;
 }
-
+@font-face {
+  font-family: 'BCSans-Bold';
+  src: url('https://kordle.kr/static/media/BCSans-Bold.252ecf87ea37c93b293c.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .cell-reveal > .letter-container {
   animation: offsetLetterFlip 0.35s linear;
   animation-fill-mode: backwards;
+  font-family: "BCSans-Bold";
 }
 
 svg.cursor-pointer {

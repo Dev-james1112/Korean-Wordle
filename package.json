@@ -9,7 +9,9 @@
     "lint": "prettier --check src",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
@@ -27,6 +29,7 @@
     "date-fns": "^2.29.1",
     "egoroof-blowfish": "^2.2.2",
     "grapheme-splitter": "1.0.4",
+    "husky": "^8.0.2",
     "query-string": "^7.1.1",
     "react": "^17.0.2",
     "react-countdown": "^2.3.2",
@@ -60,7 +63,7 @@
     "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "@types/react-datepicker": "^4.4.2",
     "autoprefixer": "^10.4.4",
-    "husky": "^7.0.4",
+    "gh-pages": "^4.0.0",
     "lint-staged": "^12.3.2",
     "postcss": "^8.4.5",
     "prettier": "^2.8.1",

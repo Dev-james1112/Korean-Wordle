@@ -9,7 +9,7 @@ import { MigrationStats } from '../modals/MigrateStatsModal'
 
 export const EmigratePanel = () => {
   const [isCopyButtonEnabled, setIsCopyButtonEnabled] = useState(true)
-  const [copyButtonText, setCopyButtonText] = useState('Copy')
+  const [copyButtonText, setCopyButtonText] = useState('복사')
   const stats = loadStats()
   const gameState = loadGameStateFromLocalStorage(true)
 
@@ -22,7 +22,7 @@ export const EmigratePanel = () => {
 
   const copyEmigrationCodeToClipboard = () => {
     copyTextToClipboard(emigrationCode)
-    setCopyButtonText('Copied!')
+    setCopyButtonText('복사됨!')
     setIsCopyButtonEnabled(false)
   }
 
@@ -32,7 +32,7 @@ export const EmigratePanel = () => {
         htmlFor="message"
         className="mb-2 block text-left text-sm font-medium text-gray-900 dark:text-gray-400"
       >
-        Copy your migration code:
+        마이그레이션 코드를 복사하세요
       </label>
       <textarea
         id="emigration-code"

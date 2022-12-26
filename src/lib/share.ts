@@ -1,9 +1,8 @@
 import { UAParser } from 'ua-parser-js'
 
-import { MAX_CHALLENGES } from '../constants/settings'
-import { GAME_TITLE } from '../constants/strings'
+
 import { getGuessStatuses } from './statuses'
-import { solutionIndex, unicodeSplit } from './words'
+import {  unicodeSplit } from './words'
 
 const webShareApiDeviceTypes: string[] = ['mobile', 'smarttv', 'wearable']
 const parser = new UAParser()
@@ -21,14 +20,13 @@ export const shareStatus = (
   handleShareFailure: () => void
 ) => {
   const textToShare =
-    `${GAME_TITLE} ${solutionIndex} ${
-      lost ? 'X' : guesses.length
-    }/${MAX_CHALLENGES}${isHardMode ? '*' : ''}\n\n` +
     generateEmojiGrid(
       solution,
       guesses,
       getEmojiTiles(isDarkMode, isHighContrastMode)
-    )
+    )+'\n\n한글 워들 - Korean Wordle\nhttps://korean-wordle.james1112.xyz/'
+    
+    
 
   const shareData = { text: textToShare }
 
