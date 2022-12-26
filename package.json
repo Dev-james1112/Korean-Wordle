@@ -13,7 +13,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dev-james1112.github.io/Korean-Wordle/",
+  "homepage": "http://korean-wordle.james1112.xyz/",
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.6",
